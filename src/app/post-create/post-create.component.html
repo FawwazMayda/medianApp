@@ -3,9 +3,6 @@
   <mat-form-field>
     <textarea matInput rows="6" [(ngModel)]="enteredPost"></textarea>
   </mat-form-field>
+  <button mat-button color='accent' (click)="addPost()"> Save Post</button>
 </mat-card>
-
-<hr>
-<button mat-button color='accent' (click)="addPost()"> Save Post</button>
-
 <p> {{ post }}</p>
