@@ -10,7 +10,7 @@ export class PostCreateComponent implements OnInit {
 
   enteredContent : string;
   enteredTitle : string;
-  @Output() postCreated = new EventEmitter()
+  @Output() postCreated = new EventEmitter<Post>()
 
   post : Post;
   constructor() { }
