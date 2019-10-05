@@ -1,9 +1,13 @@
 <p>post-create works!</p>
 <mat-card>
   <mat-form-field>
-    <textarea matInput rows="6" [(ngModel)]="enteredPost"></textarea>
+    <input matInput type="text" [(ngModel)]="enteredTitle" placeholder="Your Title">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput rows="6" [(ngModel)]="enteredContent" placeholder="Your Content"></textarea>
   </mat-form-field>
   <br>
   <button mat-button color='accent' (click)="addPost()"> Save Post</button>
 </mat-card>
-<p> {{ post }}</p>
+<p>{{ post.title }}</p>
+<p> {{ post.content }}</p>
