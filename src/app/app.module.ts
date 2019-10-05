@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms'
 import { MatCardModule,
          MatInputModule,
          MatButtonModule,
-         MatToolbarModule
+         MatToolbarModule,
+         MatExpansionModule
 } from '@angular/material';
 
 
@@ -28,7 +29,8 @@ import { HeaderComponent } from './header/header.component';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
