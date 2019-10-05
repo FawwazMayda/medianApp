@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Post } from './post.models';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'medianApp';
-  storedPosts = []
+  storedPosts : Post[] = []
 
   onPostAdded(post){
     this.storedPosts.push(post)
